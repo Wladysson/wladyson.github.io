@@ -160,8 +160,11 @@ h6 {
 .header .profile-img img {
   margin: 15px auto;
   display: block;
-  width: 120px;
+  width: 180px;
+  height: 180px; /* adicionado para forçar imagem quadrada */
+  border-radius: 50%; /* transforma em círculo */
   border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  object-fit: cover; /* mantém o rosto centralizado e sem distorcer */
 }
 
 .header .logo {
