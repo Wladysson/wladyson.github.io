@@ -555,6 +555,15 @@ section,
   justify-content: center;
 }
 
+
+.dino-gif {
+   display: block;          /* Garante que o dino seja exibido como um bloco */
+  margin-top: 690px;      /* Espaçamento acima do dino */
+  height: 200px !important; /* Tamanho pequeno */
+  width: auto !important;
+  image-rendering: pixelated;
+}
+
 .hero img {
   position: absolute;
   inset: 0;
