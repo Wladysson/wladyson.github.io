@@ -1279,6 +1279,59 @@ section,
   color: var(--accent-color);
 }
 
+/*nova seçao de teste */
+#services .texto-imagem {
+  display: flex;
+  align-items: flex-start; /* Alinha no topo */
+  gap: 20px;
+}
+
+#services .texto {
+  flex: 1;
+}
+
+#services .imagem img {
+  width: 400px;
+  height: auto;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  #services .texto-imagem {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.slider {
+  height: 120px; /* altura da barra */
+  overflow: hidden;
+  position: relative;
+  background: transparent; /* cor de fundo da barra */
+  display: flex;
+  align-items: center;
+}
+
+.slide-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  width: calc(250px * 30); /* largura total (ajuste conforme imagens) */
+}
+
+.slide-track img {
+  height: 100px;
+  margin: 0 15px;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* metade porque duplicamos as imagens */
+}
+
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
