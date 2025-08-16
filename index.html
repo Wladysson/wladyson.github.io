@@ -94,6 +94,7 @@
         <li><a href="#portfolio"><i class="bi bi-code-slash navicon"></i> Portifólio e Laboratórios</a></li>
         <li><a href="#competencia"><i class="bi bi-terminal navicon"></i> Competência Técnica</a></li>
         <li><a href="#comunidade"><i class="bi bi-people navicon"></i> Contribuição a Comunidade</a></li>
+        <li><a href="#pesquisa"><i class="bi bi-lightbulb navicon"></i> Pesquisa e Artigo</a></li>
         <li><a href="#services"><i class="bi bi-rocket navicon"></i> Extras Adicionais</a></li>
         <li><a href="#Informacoes"><i class="bi bi-person-check navicon"></i> Participações</a></li>
   </header>
@@ -103,7 +104,16 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+      <!--<img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">-->
+
+    <div class="hero-slide">
+      <img src="assets/img/hero-bg.jpg" class="slide active" alt="Slide 1">
+      <img src="assets/img/hero-bg-2.jpg" class="slide" alt="Slide 2">
+      <img src="assets/img/hero-bg-3.jpg" class="slide" alt="Slide 3">
+      <img src="assets/img/hero-bg-4.jpg" class="slide" alt="Slide 4">
+      <img src="assets/img/hero-bg-5.jpg" class="slide" alt="Slide 5">
+
+    </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Wladyson Araújo</h2>
@@ -252,10 +262,13 @@
             <h3 class="resume-title">Certificações</h3>
               <ul>
                 <li>Gerenciamento de Ameaças Cibernéticas – Instituto Militar de Engenharia | 2025</li>
+                <li>Oracle OCI Foundations - Oracle | 2025</li>
+                <li>Oracle OCI DevOps Professional - Oracle | 2025</li>
                 <li>Inglês Intermediário para Profissionais de TI – Dell Technologies | 2025</li>
                 <li>Desenvolvimento Apex e Banco de Dados Oracle - Instituto Serzedello Corrêa | 2025</li>
                 <li>Programação em Java Avançado – Instituto Federal do Rio Grande do Sul (IFRS) | 2024</li>
                 <li>Administrador de Banco de Dados – Instituto Federal do Rio Grande do Sul (IFRS) | 2024</li>
+                <li>Banco de Dados: Oracle PL/SQL – Instituto Federal do Rio Grande do Sul (IFRS) | 2024</li>
                 <li>Power BI Discovery - Treinamento Microsoft - Comunidade Data Driver | 2024</li>
                 <li>Segurança em Tecnologia da Informação - Bradesco | 2024</li><br>
               </ul><hr>
@@ -282,8 +295,21 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Experiência Profissional</h3>
+
             <div class="resume-item">
-              <h4>Desenvolvedor – Projeto Suprema ADMIN (PJ / Autônomo)</h4>
+              <h4>Desenvolvedor Back-end</h4>
+              <em>Laboratorio de Inovação Digital em Tecnologia e Sistemas de Informação</em>
+              <h5>Agost - 2025</h5>
+              <ul>
+                <li style="list-style-type: none;">Atuei no desenvolvimento de sistemas back-end, criando e integrando APIs para conectar diferentes aplicações e permitir a troca de dados de forma rápida e segura.</li>
+                <li>Desenvolvi funcionalidades utilizando linguagens como Python, Java, Node.js, JavaScript, PHP, C++ e C#, aplicando conceitos de orientação a objetos juntamente com metodologias de desenvolvimento web, boas práticas de programação e arquitetura limpa. Trabalhei na implementação de autenticação garantindo a segurança no acesso aos sistemas, além de aplicar técnicas de prevenção contra SQL Injection e outras vulnerabilidades</li>
+                <li>No laboratório também são desenvolvidas aplicações e soluções voltadas para apoiar o IES na melhoria de processos e na resolução de problemas tecnológicos.</li>
+                <li>Contribuí também para o compartilhamento de conhecimento entre os membros da equipe, promovendo boas práticas de versionamento, testes automatizados e documentação clara dos sistemas.</li>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Analista de Sistemas – Projeto Suprema ADMIN</h4>
+              <em>Suprema ADMIN</em>
               <h5>Jan - 2025 - Agost - 2025</h5>
               <ul>
                 <li style="list-style-type: none;">Desenvolvimento de um sistema automatizado voltado à gestão de dados na área da saúde relacionado a clinicas.
@@ -402,15 +428,6 @@
                 <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <a href="assets/img/portfolio/app-1.jpg" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="assets/img/portfolio/branding-1.jpg" title="" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -1046,11 +1063,61 @@
                   escalabilidade segurança e reprodutibilidade
                 </li>
               </ul>    
+
+          <h3 class="resume-title">N-eight-N (N8N) Automação Intelligence a base de NÓS</h3>
+              <ul>
+                <p align="">
+                    <a href="https://skillicons.dev">
+                      <img src="https://skillicons.dev/icons?i=linux,python,ai,git,github,docker,javascript,aiscript,kubernetes,mysql,postgres," />
+                    </a>
+                </p><br>
+                <li>
+                  Repositório desenvolvido para criar fluxos automatizados de tarefas e integração entre sistemas e serviços, otimizando processos repetitivos e aumentando a produtividade.
+                  O projeto utiliza a plataforma N8N para conectar APIs, bancos de dados e serviços em nuvem, permitindo workflows inteligentes acionados automaticamente ou manualmente.
+                  Inclui automação de processos administrativos, envio de e-mails, notificações, atualizações de sistemas, integração entre ferramentas, registro e monitoramento de atividades, tratamento de dados, verificação de consistência e personalização de fluxos conforme necessidade.
+                  Permite integração com ferramentas de BI, sistemas financeiros, CRMs e plataformas de comunicação, facilitando a centralização de informações e análise de dados em tempo real.
+                  O projeto foi containerizado com Docker, permitindo fácil instalação, configuração e execução em qualquer ambiente sem dependências complexas.
+                  A manutenção é facilitada pela estrutura modular, documentação detalhada e versionamento via Git, permitindo adicionar novos workflows, atualizar integrações e corrigir problemas rapidamente.
+                  Serve como base para desenvolver soluções corporativas inteligentes, permitindo que empresas implementem automações complexas, escaláveis e seguras sem criar tudo do zero.
+                </li>
+              </ul>  
+
+          
           <hr>
       </div>
     </section>
 
+  <section id="pesquisa" class="services section">
+    <div class="container section-title" data-aos="fade-up">
+    <h2>Pesquisa e Artigo Científico</h2>
+    <h3 class="resume-title">Pesquisa e Estudo em Visão Computacional e Processamento de Linguagem Natural com Inteligência Artificial - ML-SI</h3>
+    <div class="texto-imagem">
+      <div class="texto">
+        Realizei pesquisa explorando técnicas de Machine Learning e Deep Learning para resolver 
+        problemas práticos. Desenvolvi modelos utilizando TensorFlow, PyTorch e Scikit-learn, aplicando 
+        redes neurais convolucionais (CNNs) para classificação e reconhecimento de imagens e arquiteturas 
+        baseadas em RNNs e Transformers para análise de linguagem natural. Trabalhei com pré-processamento 
+        de dados textuais e visuais, balanceamento de datasets e otimização de hiperparâmetros, visando melhor 
+        desempenho dos modelos.
+        A pesquisa incluiu experimentos com diferentes bases de dados públicas e 
+        institucionais, avaliando métricas como acurácia, precisão, recall e F1-score. 
+        Foram desenvolvidos protótipos de aplicações, como sistemas de reconhecimento de 
+        padrões em imagens, análise de sentimentos, classificação de documentos e chatbots 
+        inteligentes com capacidade de diálogo contextual.
+        Também participei da elaboração do artigo científico, estruturando introdução, metodologia, 
+        resultados e conclusões, além de propor melhorias futuras como uso de arquiteturas mais avançadas, 
+        integração com serviços em nuvem e aplicação em cenários de saúde, segurança da informação e educação. 
+        O trabalho teve como objetivo unir pesquisa teórica com aplicações reais, fortalecendo a produção científica e
+        trazendo soluções inovadoras para problemas do cotidiano.
+      </div>
+      <div class="imagem">
+        <img src="assets/img/portfolio/fundoia.png" alt="Imagem do projeto" />
+      </div>
+    </div>
+    </div>
+  </section>
 
+    <hr>
 
     <section id="services" class="services section">
       <div class="container section-title" data-aos="fade-up">
@@ -1212,7 +1279,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  
 </body>
 
 </html>

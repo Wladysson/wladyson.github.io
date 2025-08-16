@@ -74,7 +74,7 @@
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Certificados | Treinamentos | Participações</h1>
+        <h1 class="mb-2 mb-lg-0">Laboratorios Cloud Computing</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
@@ -93,10 +93,212 @@
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
+            <div class="container">
+          <h2>Visão Geral</h2>
+          <p>Este repositório documenta <b>laboratórios reais executados durante minha formação em Computação em Nuvem pela AWS</b> através do programa <b>AWS Restart</b>. Cada diretório contém um exercício prático com:</p>
+          <ul>
+              <li>Descrição técnica e pedagógica</li>
+              <li>Capturas de tela reais</li>
+              <li>Reflexões e boas práticas</li>
+              <li>Comandos, validações e resultados</li>
+          </ul>
+
+          <blockquote>
+              <p>Este material representa não só a execução técnica, mas também meu <b>comprometimento com aprendizado contínuo e excelência profissional focado totalmente à Computação e Infraestrutura na Nuvem AWS (Amazon Web Service)</b>.</p>
+          </blockquote>
       </div>
 
+      <hr />
+
+      <div class="container">
+          <h2>Mapa dos Materiais</h2>
+          <table>
+              <thead>
+                  <tr>
+                      <th>Nº</th>
+                      <th>Nome do Lab</th>
+                      <th>Serviço AWS</th>
+                      <th>Link</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr><td>01</td><td>Instância EC2 e Acesso Remoto via SSH</td><td>EC2</td><td><a href="./lab-01-introducao-ec2">Acessar</a></td></tr>
+                  <tr><td>02</td><td>Criando Buckets e Fazendo Uploads no S3</td><td>S3</td><td><a href="./lab-02-s3">Acessar</a></td></tr>
+                  <tr><td>03</td><td>Regras de Segurança com Security Groups</td><td>EC2 / VPC</td><td><a href="./lab-03-security-groups">Acessar</a></td></tr>
+                  <tr><td>04</td><td>Monitoramento com CloudWatch</td><td>CloudWatch / EC2</td><td><a href="./lab-04-cloudwatch">Acessar</a></td></tr>
+                  <tr><td>05</td><td>Volume EBS para EC2</td><td>EBS / EC2</td><td><a href="./lab-05-ebs">Acessar</a></td></tr>
+                  <tr><td>06</td><td>IAM: Criando Usuários, Grupos e Políticas</td><td>IAM</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>07</td><td>Configurando Alarme de Métrica com CloudWatch</td><td>CloudWatch</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>08</td><td>Criando Website Estático com Amazon S3</td><td>S3</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>09</td><td>Introdução ao AWS CLI</td><td>CLI</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>10</td><td>Automação com Scripts Shell na EC2</td><td>EC2 / Bash</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>11</td><td>Elastic IP e Associação com Instância</td><td>EC2</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>12</td><td>Backup Manual e Snapshot de EBS</td><td>EBS</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>13</td><td>RDS: Criando Banco de Dados MySQL</td><td>RDS</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>14</td><td>Conectando EC2 com RDS usando MySQL</td><td>EC2 / RDS</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>15</td><td>Política IAM para Acesso S3 Específico</td><td>IAM / S3</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>16</td><td>Configurar uma Amazon VPC</td><td>EC2 / S3 / IAM</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>17</td><td>Criando Roles IAM e Atribuindo à EC2</td><td>IAM / EC2</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>18</td><td>Lançamento Manual de Stack com CloudFormation</td><td>CloudFormation</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>19</td><td>Deploy Automatizado com User Data</td><td>EC2</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>20</td><td>Versionamento e Permissões em Buckets S3</td><td>S3</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>21</td><td>Configurando Bucket para Logging</td><td>S3</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>22</td><td>Introdução ao Route 53</td><td>Route 53</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>23</td><td>Health Checks com Route 53</td><td>Route 53</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>24</td><td>VPC: Criando Sub-redes Públicas e Privadas</td><td>VPC</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>25</td><td>VPC + EC2 + Internet Gateway</td><td>VPC / EC2</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>26</td><td>Auto Scaling com EC2</td><td>Auto Scaling / EC2</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>27</td><td>Balanceamento de Carga com ELB</td><td>ELB / EC2</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>28</td><td>Deploy de Aplicação Node.js na EC2</td><td>EC2 / App</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>29</td><td>Logs de Aplicação com CloudWatch Logs</td><td>CloudWatch Logs</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>30</td><td>Instâncias Spot: Economia e Escalonamento</td><td>EC2</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>31</td><td>Criação de AMI personalizada</td><td>EC2 / AMI</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>32</td><td>Integração com GitHub Actions e AWS CLI</td><td>DevOps / CLI</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>33</td><td>Alarmes com SNS (E-mail e SMS)</td><td>SNS / CloudWatch</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>34</td><td>Amazon S3 Lifecycle Policy</td><td>S3</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>35</td><td>Deploy Simples com Elastic Beanstalk</td><td>Elastic Beanstalk</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>36</td><td>Monitoramento com Trusted Advisor</td><td>Trusted Advisor</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>37</td><td>Orquestração com AWS Systems Manager</td><td>Systems Manager</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>38</td><td>Ambiente Multi-AZ no RDS</td><td>RDS</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>39</td><td>Configuração Básica de WAF para Proteção Web</td><td>AWS WAF</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>40</td><td>Relatório Consolidado e Reflexões Finais</td><td>Todos</td><td><a href="#">Acessar</a></td></tr>
+              </tbody>
+          </table>
+      </div>
+
+      <hr />
+
+      <div class="container">
+          <h2>Labs Extras Opcionais</h2>
+          <p>Estes laboratórios foram criados por mim para <b>reforçar o conhecimento prático</b>, ir além do conteúdo básico e simular cenários comuns em ambientes reais de nuvem. Estes repositórios reúne <b>30 laboratórios práticos</b>, organizados em níveis Básico, Intermediário e Avançado, para você aprender e praticar Infraestrutura como Código, Containers, Orquestração, Automação, Segurança e Observabilidade.</p>
+
+          <h3>Índice Geral dos Laboratórios</h3>
+
+          <table>
+              <thead>
+                  <tr>
+                      <th>Nº</th>
+                      <th>Nome do Laboratório</th>
+                      <th>Nível</th>
+                      <th>Ferramentas / Serviços</th>
+                      <th>Link</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr><td>01</td><td>Provisionar Servidor EC2 Básico</td><td>Básico</td><td>AWS EC2, SSH</td><td><a href="labs/01-ec2-basico">Acessar</a></td></tr>
+                  <tr><td>02</td><td>Criar Bucket S3 para Armazenamento</td><td>Básico</td><td>AWS S3</td><td><a href="labs/02-s3-basico">Acessar</a></td></tr>
+                  <tr><td>03</td><td>Configurar Rede VPC Básica na AWS</td><td>Básico</td><td>AWS VPC, Subnets, Security Groups</td><td><a href="labs/03-vpc-basica">Acessar</a></td></tr>
+                  <tr><td>04</td><td>Automatizar Provisionamento com Terraform</td><td>Básico</td><td>Terraform, AWS EC2, S3, IAM</td><td><a href="labs/04-terraform-basico">Acessar</a></td></tr>
+                  <tr><td>05</td><td>Criar Pipeline CI simples com GitHub Actions</td><td>Básico</td><td>GitHub Actions, Git</td><td><a href="labs/05-ci-github-actions">Acessar</a></td></tr>
+                  <tr><td>06</td><td>Criar Dockerfile e Containerizar Aplicação simples</td><td>Básico</td><td>Docker</td><td><a href="labs/06-dockerfile-simples">Acessar</a></td></tr>
+                  <tr><td>07</td><td>Configurar Backup Automático no S3</td><td>Básico</td><td>AWS S3, Lifecycle Rules</td><td><a href="labs/07-backup-s3">Acessar</a></td></tr>
+                  <tr><td>08</td><td>Monitorar Logs Simples com CloudWatch Logs</td><td>Básico</td><td>AWS CloudWatch Logs</td><td><a href="labs/08-cloudwatch-logs">Acessar</a></td></tr>
+                  <tr><td>09</td><td>Criar Função Lambda Básica</td><td>Básico</td><td>AWS Lambda</td><td><a href="labs/09-lambda-basica">Acessar</a></td></tr>
+                  <tr><td>10</td><td>Configurar Alarme Simples com CloudWatch</td><td>Básico</td><td>AWS CloudWatch Alarms</td><td><a href="labs/10-alarmes-cloudwatch">Acessar</a></td></tr>
+              </tbody>
+          </table>
+
+          <table>
+              <thead>
+                  <tr>
+                      <th>Nº</th>
+                      <th>Nome do Laboratório</th>
+                      <th>Nível</th>
+                      <th>Ferramentas / Serviços</th>
+                      <th>Link</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr><td>11</td><td>Orquestrar Containers com Docker Compose</td><td>Intermediário</td><td>Docker Compose</td><td><a href="labs/11-docker-compose">Acessar</a></td></tr>
+                  <tr><td>12</td><td>Criar Cluster Kubernetes Local com Minikube</td><td>Intermediário</td><td>Minikube, kubectl</td><td><a href="labs/12-k8s-minikube">Acessar</a></td></tr>
+                  <tr><td>13</td><td>Deployar Aplicação no Kubernetes (YAML)</td><td>Intermediário</td><td>Kubernetes, kubectl</td><td><a href="labs/13-k8s-deploy-yaml">Acessar</a></td></tr>
+                  <tr><td>14</td><td>Pipeline CI/CD Completo com Jenkins em EC2</td><td>Intermediário</td><td>Jenkins, EC2, Git, S3</td><td><a href="labs/14-jenkins-cicd">Acessar</a></td></tr>
+                  <tr><td>15</td><td>Criar Cluster ECS com Docker e Load Balancer</td><td>Intermediário</td><td>ECS, Docker, ALB</td><td><a href="labs/15-ecs-docker-alb">Acessar</a></td></tr>
+                  <tr><td>16</td><td>Deploy Automatizado com GitHub Actions + Terraform</td><td>Intermediário</td><td>GitHub Actions, Terraform</td><td><a href="labs/16-actions-terraform">Acessar</a></td></tr>
+                  <tr><td>17</td><td>Monitorar Infraestrutura com Prometheus e Grafana</td><td>Intermediário</td><td>Prometheus, Grafana, EC2</td><td><a href="labs/17-prometheus-grafana">Acessar</a></td></tr>
+                  <tr><td>18</td><td>Configurar VPN Site-to-Site com AWS VPN</td><td>Intermediário</td><td>AWS VPN, VPC</td><td><a href="labs/18-vpn-site-to-site">Acessar</a></td></tr>
+                  <tr><td>19</td><td>Gerenciar Configurações com Ansible</td><td>Intermediário</td><td>Ansible</td><td><a href="labs/19-ansible-config">Acessar</a></td></tr>
+                  <tr><td>20</td><td>Criar Aplicação Serverless com AWS Lambda e API Gateway</td><td>Intermediário</td><td>AWS Lambda, API Gateway</td><td><a href="labs/20-serverless-api">Acessar</a></td></tr>
+              </tbody>
+          </table>
+
+          <table>
+              <thead>
+                  <tr>
+                      <th>Nº</th>
+                      <th>Nome do Laboratório</th>
+                      <th>Nível</th>
+                      <th>Ferramentas / Serviços</th>
+                      <th>Link</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr><td>21</td><td>Criar Pipeline com DockerHub + ECS</td><td>Avançado</td><td>Docker Hub, ECS, IAM</td><td><a href="labs/21-dockerhub-ecs">Acessar</a></td></tr>
+                  <tr><td>22</td><td>Deploy com Helm no EKS</td><td>Avançado</td><td>Helm, Kubernetes, EKS</td><td><a href="labs/22-helm-eks">Acessar</a></td></tr>
+                  <tr><td>23</td><td>Infraestrutura Segura com WAF + CloudFront + S3 Static Site</td><td>Avançado</td><td>AWS WAF, CloudFront, S3</td><td><a href="labs/23-waf-cloudfront-s3">Acessar</a></td></tr>
+                  <tr><td>24</td><td>Gerenciar Segredos com AWS Secrets Manager + Lambda</td><td>Avançado</td><td>AWS Secrets Manager, Lambda, IAM</td><td><a href="labs/24-secretsmanager-lambda">Acessar</a></td></tr>
+                  <tr><td>25</td><td>Infraestrutura Multi-Region AWS com Route53 e Auto Scaling</td><td>Avançado</td><td>Route 53, Auto Scaling, CloudWatch</td><td><a href="labs/25-multi-region-route53">Acessar</a></td></tr>
+                  <tr><td>26</td><td>Segurança de APIs com OAuth2 e AWS Cognito</td><td>Avançado</td><td>AWS Cognito, API Gateway, OAuth2</td><td><a href="labs/26-cognito-oauth2">Acessar</a></td></tr>
+                  <tr><td>27</td><td>Backup e Recuperação Automatizada com AWS Backup e Lambda</td><td>Avançado</td><td>AWS Backup, Lambda, S3</td><td><a href="labs/27-backup-recuperacao">Acessar</a></td></tr>
+                  <tr><td>28</td><td>Configurar Autoscaling Avançado para Cluster Kubernetes</td><td>Avançado</td><td>Kubernetes HPA, Metrics Server</td><td><a href="labs/28-hpa-kubernetes">Acessar</a></td></tr>
+                  <tr><td>29</td><td>Implementar Observabilidade Completa com ELK Stack</td><td>Avançado</td><td>Elasticsearch, Logstash, Kibana</td><td><a href="labs/29-elk-stack">Acessar</a></td></tr>
+                  <tr><td>30</td><td>Infraestrutura Modularizada com Terragrunt + Terraform</td><td>Avançado</td><td>Terragrunt, Terraform, AWS</td><td><a href="labs/30-terragrunt-modular">Acessar</a></td></tr>
+              </tbody>
+          </table><br>
+
+          <h3>Breve descrição dos níveis</h3>
+          <ul>
+              <li><b>Básico:</b> Fundamentos de cloud, provisionamento manual e automação simples. Ideal para quem está começando.</li>
+              <li><b>Intermediário:</b> Integração de containers, orquestração, pipelines de CI/CD e automação de infraestrutura mais robusta.</li>
+              <li><b>Avançado:</b> Projetos focados em segurança, alta disponibilidade, observabilidade, serverless e modularização avançada.</li>
+          </ul>
+
+          <h3>Como começar</h3>
+          <ul>
+              <li>Escolha o laboratório de acordo com seu nível atual.</li>
+              <li>Leia o README dentro de cada pasta para instruções detalhadas.</li>
+              <li>Execute os scripts e pratique os comandos fornecidos.</li>
+              <li>Contribua adicionando melhorias e novos labs!</li>
+          </ul>
+      </div>
+
+      <hr />
+
+      <div class="container">
+          <h2>Labs Profissionais e Avançados (Terraform, Docker, Kubernetes, DevOps)</h2>
+          <p>Estes laboratórios são voltados para quem deseja <b>ir além dos fundamentos</b> e <b>construir ambientes robustos, automatizados e prontos para produção real</b>, utilizando práticas modernas da engenharia de nuvem.</p>
+          <table>
+              <thead>
+                  <tr>
+                      <th>Nº</th>
+                      <th>Nome do Lab</th>
+                      <th>Ferramentas/Serviços</th>
+                      <th>Link</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr><td>ADV1</td><td>Provisionar Infraestrutura AWS com Terraform (EC2 + S3 + IAM)</td><td>Terraform / AWS</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>ADV2</td><td>Criar Cluster ECS com Docker e Load Balancer</td><td>ECS / Docker / ALB</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>ADV3</td><td>Criar Cluster Kubernetes com EKS</td><td>EKS / kubectl / IAM / VPC</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>ADV4</td><td>Deploy Automatizado com GitHub Actions + Terraform</td><td>GitHub Actions / Terraform / S3</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>ADV5</td><td>CI/CD com Jenkins em EC2 + Deploy em Bucket S3</td><td>Jenkins / EC2 / S3</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>ADV6</td><td>Monitoramento de Infra com Prometheus e Grafana em EC2</td><td>Prometheus / Grafana / EC2</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>ADV7</td><td>Criar Pipeline de Integração com DockerHub + ECS</td><td>Docker / ECS / IAM</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>ADV8</td><td>Deploy de Aplicação Containerizada com Helm no EKS</td><td>Helm / Kubernetes / EKS</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>ADV9</td><td>Infraestrutura Segura com WAF + CloudFront + S3 Static Website</td><td>WAF / CloudFront / S3</td><td><a href="#">Acessar</a></td></tr>
+                  <tr><td>ADV10</td><td>Gerenciar Segredos com AWS Secrets Manager + Lambda</td><td>Secrets Manager / Lambda / IAM</td><td><a href="#">Acessar</a></td></tr>
+              </tbody>
+          </table>
+      </div>
+
+      <hr/>
+
+      <div class="footer-note">
+          <p>Este repositório é público e de uso educacional. Fique à vontade para usar como referência nos seus estudos, dando os devidos créditos, e lembre-se do mais importante <b>Suas atitudes determinam seu futuro</b>.</p>
+      </div>
+
+      </body>
+      </html>
     </section><!-- /Starter Section Section -->
 
   </main>
