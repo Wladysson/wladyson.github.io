@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Java Development</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link rel="icon" href="assets/img/logo java.png" type="image/x-icon">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Wladyson</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://github.com/Wladysson" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/wladyson/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <!-- Fundamentos -->
+
+    <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-filetype-java"></i> Fundamentos de Java</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#introducao_java">Introdução à Linguagem</a>
+      <a href="#variaveis">Variáveis e Tipos</a>
+      <a href="#operadores">Operadores</a>
+      <a href="#controlefluxo">Estruturas de Controle</a>
+      <a href="#poo">POO: Classes e Objetos</a>
+      <a href="#heranca">Herança e Polimorfismo</a>
+      <a href="#interfaces">Interfaces e Classes Abstratas</a>
+      <a href="#generics">Generics e Collections</a>
+      <a href="#streams">Streams e API Collections</a>
+      <a href="#excecoes">Tratamento de Exceções</a>
+      <a href="#concorrencia">Concorrência e Multithreading</a>
+      <a href="#boaspraticas">Boas Práticas e Performance</a>
+    </div>
+  </li>
+
+    <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-motherboard"></i> Java para Embarcados</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#introducao_embarcados">Sistemas Embarcados</a>
+      <a href="#javame">Java ME e MicroEdição</a>
+      <a href="#raspberry">Java no Raspberry Pi</a>
+      <a href="#iot">Integração com IoT</a>
+      <a href="#gpio">Controle de GPIOs</a>
+      <a href="#comunicacao">Comunicação Serial e I2C</a>
+      <a href="#timers">Timers, PWM e Controle de Tempo</a>
+      <a href="#sensores-analógicos">Leitura de Sensores Analógicos</a>
+    </div>
+  </li>
+
+  <!-- Comunicação e Hardware -->
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-usb-symbol"></i> Comunicação e Hardware</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#sensores">Leitura de Sensores Digitais</a>
+      <a href="#atuadores">Controle de Atuadores</a>
+      <a href="#modbus">Protocolo Modbus e MQTT</a>
+      <a href="#bluetooth">Bluetooth e Wi-Fi</a>
+      <a href="#spi">Comunicação SPI e I2C Avançada</a>
+      <a href="#adc-dac">Conversão AD/DA</a>
+      <a href="#pwm">PWM e Controle de Motores</a>
+    </div>
+  </li>
+
+  <!-- Integrações -->
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-diagram-2"></i> Integrações e APIs</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#rest">APIs REST e HTTP</a>
+      <a href="#mqtt">Conexão com Nuvem (MQTT / CoAP)</a>
+      <a href="#banco">Banco de Dados Local (SQLite / H2)</a>
+      <a href="#cloud">Integração com Serviços na Nuvem</a>
+      <a href="#sensornuvem">Envio de Dados de Sensores para Cloud</a>
+    </div>
+  </li>
+
+  <!-- Testes e Deploy -->
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-gear-wide-connected"></i> Testes e Deploy</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#testes">Testes Unitários (JUnit)</a>
+      <a href="#logs">Logs e Monitoramento</a>
+      <a href="#deploy">Deploy em Dispositivos</a>
+      <a href="#cicd">Automação | GitHub Actions</a>
+      <a href="#profiling">Profiling e Performance</a>
+      <a href="#debug">Debug e Diagnóstico Remoto</a>
+    </div>
+  </li>
+
+  <!-- Extras / Avançados -->
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-lightning-charge"></i> Avançados e Extras</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#microservicos">Microserviços Embarcados</a>
+      <a href="#designpatterns">Padrões de Projeto Aplicados</a>
+      <a href="#seguranca_embarcada">Segurança em Dispositivos</a>
+      <a href="#iot_analytics">Coleta e Análise de Dados IoT</a>
+      <a href="#kubernetes_embarcado">Orquestração em Edge Devices</a>
+    </div>
+  </li>
+
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-database"></i> Banco de Dados</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#jdbc">Integração com JDBC</a>
+      <a href="#sql">Fundamentos SQL</a>
+      <a href="#ddl">Criação e Alteração de Tabelas (DDL)</a>
+      <a href="#dml">Manipulação de Dados (DML)</a>
+      <a href="#joins">Joins, Views e Indexes</a>
+      <a href="#transacoes">Transações e Controle de Concorrência</a>
+      <a href="#noSQL">Integração com Bancos NoSQL</a>
+      <a href="#connectionpool">Connection Pool e Boas Práticas</a>
+      <a href="#migrations">Migrations e Versionamento de BD</a>
+    </div>
+  </li>
+
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-globe"></i> Java Web</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#servlets">Servlets e Ciclo de Vida</a>
+      <a href="#jsp">JSP e Expressão EL</a>
+      <a href="#jsf">JSF e Componentes Web</a>
+      <a href="#springmvc">Spring MVC</a>
+      <a href="#springboot">Spring Boot</a>
+      <a href="#rest">APIs REST e HTTP</a>
+      <a href="#soap">APIs SOAP</a>
+      <a href="#seguranca_web">Segurança Web (JWT / OAuth2 / Spring Security)</a>
+      <a href="#session">Gerenciamento de Sessão e Cookies</a>
+      <a href="#formhandling">Validação de Formulários e Binding</a>
+      <a href="#templates">Thymeleaf / Templates</a>
+      <a href="#deploy_web">Deploy em Servidores (Tomcat / WildFly / Docker)</a>
+      <a href="#microservicos_web">Microserviços com Spring Cloud</a>
+      <a href="#monitoramento_web">Monitoramento e Logs Web</a>
+    </div>
+  </li>
+
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-server"></i> Java + Nginx</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#nginx_overview">Visão Geral do Nginx</a>
+      <a href="#reverse_proxy">Configuração de Reverse Proxy</a>
+      <a href="#load_balancing">Balanceamento de Carga</a>
+      <a href="#ssl">TLS / SSL e Segurança</a>
+      <a href="#deploy_java_nginx">Deploy de Aplicações Java</a>
+      <a href="#nginx_config">Arquivos de Configuração Avançados</a>
+      <a href="#monitoramento_nginx">Logs e Monitoramento</a>
+    </div>
+  </li>
+
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-diagram-3"></i> Java + Kubernetes</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#k8s_overview">Introdução ao Kubernetes</a>
+      <a href="#pods_deploy">Deploy de Pods e Containers</a>
+      <a href="#services">Serviços e Networking</a>
+      <a href="#configmaps">ConfigMaps e Secrets</a>
+      <a href="#volumes">Volumes e Persistent Storage</a>
+      <a href="#scaling">AutoScaling e HPA</a>
+      <a href="#ingress">Ingress Controller e Regras de Roteamento</a>
+      <a href="#monitoring_k8s">Monitoramento com Prometheus / Grafana</a>
+      <a href="#microservices_k8s">Microserviços Java em Kubernetes</a>
+    </div>
+  </li>
+
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-joystick"></i> Slots Complexos</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#slots_design">Design e Arquitetura de Slots</a>
+      <a href="#slots_logica">Lógica de Jogos e Algoritmos</a>
+      <a href="#slots_python">Implementação em Python / Java</a>
+      <a href="#slots_tests">Testes Automatizados</a>
+      <a href="#slots_estrutura">Estruturas de Dados Aplicadas</a>
+      <a href="#slots_probabilidades">Cálculo de Probabilidades</a>
+      <a href="#slots_simulacao">Simulação de Jogadas</a>
+    </div>
+  </li>
+
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-file-code"></i> Matrizes Conexões Complexas</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#matrizes_basicas">Matrizes Estáticas e Dinâmicas</a>
+      <a href="#matrizes_alocacao">Alocação Dinâmica com malloc</a>
+      <a href="#matrizes_ponteiros">Manipulação com Ponteiros</a>
+      <a href="#matrizes_ligadas">Representação Ligada de Matrizes</a>
+      <a href="#conexao_estruturas">Conexões Complexas entre Estruturas</a>
+      <a href="#matrizes_operacoes">Operações Avançadas e Otimizações</a>
+      <a href="#matrizes_tests">Testes e Validação de Matrizes</a>
+      <a href="#matrizes_projetos">Projetos Práticos com Matrizes</a>
+    </div>
+  </li>
+
+      </ul>
+    </nav>
+
+  </header>
+
+    <style>
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 14px;
+      background: #222;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 8px;
+      margin-bottom: 5px;
+      transition: background 0.3s;
+    }
+
+    .menu-item:hover {
+      background: #333;
+    }
+
+    .submenu {
+      list-style: none;
+      padding-left: 20px;
+      display: none; /* fechado por padrão */
+    }
+
+    .submenu li a {
+      display: block;
+      padding: 6px 0;
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .submenu li a:hover {
+      color: #fff;
+    }
+
+    .toggle-icon {
+      font-size: 0.9rem;
+      transition: transform 0.3s;
+    }
+
+    .menu-item.active .toggle-icon {
+      transform: rotate(180deg);
+    }
+  </style>
+
+
+  <script>
+    function toggleMenu(element) {
+      const parent = element.parentElement;
+      parent.classList.toggle("open");
+      const submenu = parent.querySelector(".submenu");
+      submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Laboratorios Java web</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Cursos</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Starter Section Section -->
+    <section id="starter-section" class="starter-section section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Mapa</h2>
+        <p>OBS: Em Desenvolvimento</p>
+      </div><!-- End Section Title -->
+
+            <div class="container">
+          <h2>Visão Geral</h2>
+          <p>Este repositório documenta <b>laboratórios reais executados durante minha formação</b>. Cada diretório contém um exercício prático com:</p>
+          <ul>
+              <li>Descrição técnica e pedagógica</li>
+              <li>Capturas de tela reais</li>
+              <li>Reflexões e boas práticas</li>
+              <li>Comandos, validações e resultados</li>
+          </ul>
+      </div>
+
+      <hr/>
+
+
+
+      <div class="footer-note">
+      </div>
+
+      </body>
+      </html>
+    </section><!-- /Starter Section Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

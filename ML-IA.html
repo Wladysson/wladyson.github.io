@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>ML-IA</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link rel="icon" href="assets/img/icons8-python.gif" type="image/x-icon">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Wladyson</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://github.com/Wladysson" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/wladyson/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+  <!-- Introdução à Programação -->
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-code-slash"></i> Introdução à Programação</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#conceitos">Conceitos Básicos</a>
+      <a href="#algoritmos">Lógica e Algoritmos</a>
+      <a href="#fluxogramas">Fluxogramas e Pseudocódigos</a>
+      <a href="#estruturas">Estruturas de Controle</a>
+      <a href="#funcoes">Funções e Modularização</a>
+    </div>
+  </li>
+
+  <!-- Ciência de Dados e IA -->
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-cpu"></i> Ciência de Dados | IA</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#introducao_ia">Introdução à IA</a>
+      <a href="#analise_dados">Análise Exploratória</a>
+      <a href="#modelos">Modelos Estatísticos</a>
+      <a href="#machine_learning">Machine Learning</a>
+      <a href="#avaliacao">Avaliação de Modelos</a>
+    </div>
+  </li>
+
+  <!-- Estrutura de Dados -->
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-diagram-3"></i> Estrutura de Dados</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#listas">Listas e Pilhas</a>
+      <a href="#filas">Filas e Deques</a>
+      <a href="#arvores">Árvores e Grafos</a>
+      <a href="#hash">Tabelas Hash</a>
+      <a href="#complexidade">Análise de Complexidade</a>
+    </div>
+  </li>
+
+  <!-- Programação com Python -->
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-filetype-py"></i> Programação com Python</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#fundamentos_py">Fundamentos e Sintaxe</a>
+      <a href="#poo_py">POO em Python</a>
+      <a href="#bibliotecas">Bibliotecas Científicas</a>
+      <a href="#automacao">Automação e Scripts</a>
+      <a href="#projetos_py">Projetos Práticos</a>
+    </div>
+  </li>
+
+  <!-- Fundamentos de Estatística -->
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-graph-up"></i> Fundamentos de Estatística</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#medidas">Medidas de Tendência Central</a>
+      <a href="#distribuicoes">Distribuições de Probabilidade</a>
+      <a href="#amostragem">Amostragem e Inferência</a>
+      <a href="#regressao">Regressão Linear</a>
+      <a href="#hipoteses">Testes de Hipóteses</a>
+    </div>
+  </li>
+
+  <!-- Visualização de Dados -->
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-bar-chart-line"></i> Visualização de Dados</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#graficos">Gráficos e Dashboards</a>
+      <a href="#matplotlib">Matplotlib e Seaborn</a>
+      <a href="#plotly">Plotly e Interatividade</a>
+      <a href="#tableau">Uso de Power BI / Tableau</a>
+      <a href="#projetos_vis">Visualizações Reais</a>
+    </div>
+  </li>
+
+  <!-- Banco de Dados -->
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-database"></i> Fundamentos de BD</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#conceitos_bd">Modelagem Relacional</a>
+      <a href="#sql">Consultas SQL</a>
+      <a href="#joins">Joins e Subconsultas</a>
+      <a href="#transacoes">Transações e Índices</a>
+      <a href="#nosql">Introdução ao NoSQL</a>
+    </div>
+  </li>
+
+  <!-- Mineração de Dados -->
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-hammer"></i> Mineração de Dados</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#kmeans">Clusterização (K-Means)</a>
+      <a href="#arvoredecisao">Árvores de Decisão</a>
+      <a href="#regras">Regras de Associação</a>
+      <a href="#pca">PCA e Redução de Dimensionalidade</a>
+      <a href="#avaliacao_mineracao">Avaliação e Validação</a>
+    </div>
+  </li>
+
+  <!-- Modelagem de Dados -->
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-diagram-2"></i> Modelagem de Dados</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#conceitual">Modelo Conceitual (DER)</a>
+      <a href="#logico">Modelo Lógico e Normalização</a>
+      <a href="#fisico">Modelo Físico</a>
+      <a href="#otimizacao">Otimização e Performance</a>
+      <a href="#casos">Casos Práticos</a>
+    </div>
+  </li>
+
+  <!-- IA Aplicada -->
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-robot"></i> Programação Aplicada à IA</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#ia_intro">Redes Neurais</a>
+      <a href="#tensorflow">TensorFlow e PyTorch</a>
+      <a href="#nlp">NLP e Processamento Textual</a>
+      <a href="#vision">Visão Computacional</a>
+      <a href="#ia_proj">Projetos de IA Aplicada</a>
+    </div>
+  </li>
+
+  <!-- Aprendizado Supervisionado -->
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-lightbulb"></i> Aprend Supervisionado</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#regressao">Regressão Linear e Logística</a>
+      <a href="#svm">SVM e Decision Trees</a>
+      <a href="#randomforest">Random Forest</a>
+      <a href="#naivebayes">Naive Bayes</a>
+      <a href="#avaliacao_supervisionado">Validação Cruzada</a>
+    </div>
+  </li>
+
+  <!-- Aprendizado Não Supervisionado -->
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-diagram-3-fill"></i> Aprend Não Supervisionado</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#kmeans">K-Means e Clustering</a>
+      <a href="#pca">PCA e Redução Dimensional</a>
+      <a href="#dbscan">DBSCAN</a>
+      <a href="#autoencoders">Autoencoders</a>
+      <a href="#casos_uso">Casos de Uso</a>
+    </div>
+  </li>
+
+  <!-- Processamento Textual -->
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-file-earmark-text"></i> Processamento Textual</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#nlp_basico">NLP Básico</a>
+      <a href="#tokenizacao">Tokenização e Vetorização</a>
+      <a href="#sentimento">Análise de Sentimento</a>
+      <a href="#chatbots">Chatbots com IA</a>
+      <a href="#transformers">Transformers e LLMs</a>
+    </div>
+  </li>
+
+  <!-- Engenharia de Prompt -->
+  <li class="nav-item">
+    <div class="nav-link" onclick="toggleMenu(this)">
+      <span><i class="bi bi-gear-wide-connected"></i> Engenharia de Prompt</span>
+      <i class="bi bi-chevron-right arrow"></i>
+    </div>
+    <div class="submenu">
+      <a href="#fundamentos_prompt">Fundamentos de Prompts</a>
+      <a href="#estrategias">Estratégias e Contexto</a>
+      <a href="#avancado_prompt">Prompts Avançados</a>
+      <a href="#avaliacao_prompts">Avaliação de Respostas</a>
+      <a href="#aplicacoes_prompt">Aplicações em Produção</a>
+    </div>
+  </li>
+</ul>
+    </nav>
+
+  </header>
+
+  <style>
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 14px;
+      background: #222;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 8px;
+      margin-bottom: 5px;
+      transition: background 0.3s;
+    }
+
+    .menu-item:hover {
+      background: #333;
+    }
+
+    .submenu {
+      list-style: none;
+      padding-left: 20px;
+      display: none; /* fechado por padrão */
+    }
+
+    .submenu li a {
+      display: block;
+      padding: 6px 0;
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .submenu li a:hover {
+      color: #fff;
+    }
+
+    .toggle-icon {
+      font-size: 0.9rem;
+      transition: transform 0.3s;
+    }
+
+    .menu-item.active .toggle-icon {
+      transform: rotate(180deg);
+    }
+  </style>
+
+
+  <script>
+    function toggleMenu(element) {
+      const parent = element.parentElement;
+      parent.classList.toggle("open");
+      const submenu = parent.querySelector(".submenu");
+      submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Laboratorios Data Science e IA</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Cursos</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Starter Section Section -->
+    <section id="starter-section" class="starter-section section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Mapa</h2>
+        <p>OBS: Em Desenvolvimento</p>
+      </div><!-- End Section Title -->
+
+            <div class="container">
+          <h2>Visão Geral</h2>
+          <p>Este repositório documenta <b>laboratórios reais executados durante minha formação</b>. Cada diretório contém um exercício prático com:</p>
+          <ul>
+              <li>Descrição técnica e pedagógica</li>
+              <li>Capturas de tela reais</li>
+              <li>Reflexões e boas práticas</li>
+              <li>Comandos, validações e resultados</li>
+          </ul>
+      </div>
+
+      <hr />
+
+      </body>
+      </html>
+    </section><!-- /Starter Section Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
