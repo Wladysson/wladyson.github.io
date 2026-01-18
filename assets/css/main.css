@@ -1314,6 +1314,28 @@ section,
 
 #services .texto {
   flex: 1;
+}.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.info-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.info-list i {
+  font-size: 1.2rem;
+  color: #149ddd;
+  min-width: 20px;
+}
+
+.info-list a {
+  color: #149ddd;
+  text-decoration: none;
 }
 
 #services .imagem img {
@@ -1331,6 +1353,7 @@ section,
   }
 }
 
+/* BARRA DE ANIMAÇAO ONDE FICA AS COMPETENCIAS TECNICAS */
 .slider {
   height: 120px; /* altura da barra */
   overflow: hidden;
@@ -1356,6 +1379,8 @@ section,
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); } /* metade porque duplicamos as imagens */
 }
+
+
 
 /* nova seçao para area de pesquisa de  */
 #pesquisa .texto-imagem {
@@ -1387,6 +1412,77 @@ section,
     max-width: 400px;
   }
 }
+
+.badge-shine {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.badge-shine img {
+  display: block;
+  width: 200px; /* mantém tamanho do badge */
+  height: auto;
+}
+
+/* brilho */
+.badge-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  pointer-events: none;
+  z-index: 2;
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% { left: -120%; }
+  50% { left: 120%; }
+  100% { left: 120%; }
+}
+
+/*seção do sobre e informações */
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+
+  display: flex;
+  gap: 20px;                  /* espaço entre os links */
+  flex-wrap: wrap; 
+}
+
+.info-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.info-list i {
+  font-size: 1.6rem;
+  color: #149ddd;
+  min-width: 24px;
+}
+
+.info-list a {
+  color: #149ddd;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 
 .next-btn {
   display: inline-block;
