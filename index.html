@@ -5,8 +5,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Wladyson Araújo</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta name="author" content="Wladyson Araújo">
+  <meta name="description" content="Software Engineer focused on Cloud, DevOps and scalable systems.">
+  <meta name="keywords" content="Software Engineer, DevOps, Cloud, Java, Kubernetes">
+
 
   <link rel="icon" href="assets/img/w.png" type="image/x-icon">
 
@@ -28,6 +30,37 @@
 
   <link href="assets/css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BFN8Y4856B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BFN8Y4856B');
+  </script>
+
+  <script>
+  let scrollTracked = false;
+
+  window.addEventListener('scroll', function() {
+    if (scrollTracked) return;
+
+    let scrollTop = window.scrollY;
+    let windowHeight = window.innerHeight;
+    let documentHeight = document.body.offsetHeight;
+
+    if (scrollTop + windowHeight >= documentHeight - 10) {
+      gtag('event', 'scroll_bottom', {
+        event_category: 'engagement',
+        event_label: 'user_reached_bottom'
+      });
+
+      scrollTracked = true; // evita múltiplos envios
+    }
+  });
+  </script>
 
   <script>
         tailwind.config = {
@@ -83,8 +116,17 @@
 
     <div class="social-links text-center">
       <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="https://github.com/Wladysson" class="github"><i class="bi bi-github"></i></a>
-      <a href="https://www.linkedin.com/in/wladyson/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/Wladysson"
+        class="github"
+        onclick="gtag('event', 'click_github')">
+        <i class="bi bi-github"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/wladyson/"
+        class="linkedin"
+        onclick="gtag('event', 'click_linkedin')">
+        <i class="bi bi-linkedin"></i>
+      </a>
     </div>
 
     <nav id="navmenu" class="navmenu">
@@ -159,9 +201,7 @@
           <li>
             <i class="bx bx-envelope"></i>
             <strong>E-mail:</strong>
-            <a href="mailto:wladysonaraujo991@gmail.com">
-              wladysonaraujo991@gmail.com
-            </a>
+            <a href="mailto:wladysonaraujo991@gmail.com" onclick="gtag('event', 'click_email')"></a>
           </li>
         </ul>
 
@@ -171,12 +211,12 @@
             <ul class="info-list">
               <li>
                 <i class="bx bxl-linkedin"></i>
-                <a href="https://www.linkedin.com/in/wladyson/" target="_blank">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/wladyson/" target="_blank" onclick="gtag('event', 'click_linkedin')">LinkedIn</a>
               </li>
 
               <li>
                 <i class="bx bxl-github"></i>
-                <a href="https://github.com/Wladysson" target="_blank">GitHub</a>
+                <a href="https://github.com/Wladysson" target="_blank" onclick="gtag('event', 'click_github')">GitHub</a>
               </li>
             </ul>
 
@@ -1161,8 +1201,19 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">© 2026 Wladyson Araújo. Built with passion for software and cloud.</strong> <span>All Rights Reserved</span></p>
       </div>
+
+      <!-- Aviso do Analytics -->
+      <p style="font-size: 12px; opacity: 0.7;">
+        <p style="font-size: 12px; opacity: 0.7;">
+          This site uses Google Analytics. Learn how Google uses data from sites:
+          <a href="https://policies.google.com/privacy" target="_blank">
+            Privacy Policy
+          </a>
+        </p>
+      </p>
+    </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you've purchased the pro version. -->
