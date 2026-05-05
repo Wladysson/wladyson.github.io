@@ -1451,6 +1451,25 @@ section,
   100% { left: 120%; }
 }
 
+.language-switcher-simple {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  position: fixed;   /* isso fixa na tela */
+  top: 30px;         /* distância do topo */
+  right: 30px;       /* distância da direita */
+  z-index: 999;
+}
+
+.language-switcher-simple a {
+  text-decoration: none;
+  padding: 4px 8px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
 /*seção do sobre e informações */
 
 .info-list {
