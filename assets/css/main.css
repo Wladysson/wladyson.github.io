@@ -216,6 +216,18 @@ h6 {
   }
 }
 
+.github-stats {
+    margin-top: -200px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.github-stats img {
+    width: 550px;
+    max-width: 100%;
+}
+
+
 @media (max-width: 1199px) {
   .header {
     left: -100%;
