@@ -217,6 +217,14 @@
               </li>
             </ul>
 
+              <div class="github-stats">
+                  <a href="https://github.com/Wladysson" target="_blank" rel="noopener noreferrer">
+                      <img
+                          src="https://github-readme-stats-sigma-five.vercel.app/api?username=Wladysson&show_icons=true&theme=blue_navy&hide_border=true&include_all_commits=true&count_private=true"
+                          alt="GitHub Statistics">
+                  </a>
+              </div>
+
       </div><!-- End Section Title -->
         <hr>
 
@@ -1017,21 +1025,6 @@
               </li>
             </ul>
 
-          <h3 class="resume-title">API de Monitoramento de Limites e Fraude</h3>
-            <ul>
-              <li class="texto-imagem">
-                <div class="texto"> Este projeto foca na validação e tomada de decisão em tempo real para evitar fraudes e estouro de limites durante transações.
-                  O objetivo foi criar uma API Java de alto throughput que, a cada transação recebida, consulta o histórico do cliente e aplica regras de negócio complexas — como limites diários e frequência de uso — em poucos milissegundos.
-                  Para garantir decisões rápidas, utilizei Redis (via Caffeine como cache local + Redis remoto) para armazenar limites e dados recentes do cliente em memória, mantendo tempos de resposta abaixo de 50ms. O cluster Redis foi provisionado com Terraform usando AWS ElastiCache.
-                  As regras de negócio foram implementadas com Drools, permitindo atualizar regras de fraude sem recompilar o código principal. O pipeline de CI/CD no GitHub Actions valida e implanta novas regras em um ambiente Blue/Green no Kubernetes, garantindo atualizações seguras.
-                  O monitoramento foi feito com Prometheus e Grafana, criando dashboards que acompanham as taxas de “Rejeitadas por Limite” e “Rejeitadas por Fraude”, alinhadas às métricas de negócio definidas segundo práticas de SRE.
-                </div>
-                <div class="imagem">
-                  <img src="assets/img/portfolio/api.jpg" alt="imagem do projeto" />
-                </div>
-              </li>
-            </ul>
-
           <h3 class="resume-title">Sistema de Gerenciamento de Limites de Crédito em Tempo Real</h3>
             <ul>
               <li class="texto-imagem">
@@ -1047,82 +1040,10 @@
               </li>
             </ul>
           
-          <h3 class="resume-title">Formação em Cloud Computing AWS - Escola da Nuvem | Mai/2025 - Out/2025</h3>
-            <ul>
-              <li class="texto-imagem">
-                <div class="texto"> Sistema de venda e controle de ingressos digitais com validação 
-                  de identidade por reconhecimento facial para o Santa Cruz Futebol Clube, atendendo à Lei 
-                  Geral do Esporte (14.597/2023) e promovendo maior segurança, agilidade e conforto aos torcedores.
-                  O projeto integra tecnologias avançadas da AWS, como Amazon Rekognition para reconhecimento 
-                  facial, DynamoDB para armazenamento seguro de dados, API Gateway e AWS Lambda para processamento
-                  serverless, garantindo alta escalabilidade e disponibilidade superior a 99% em dias de jogos.
-                  Com foco na redução de fraudes, eliminação do cambismo e agilidade no acesso, o sistema oferece
-                  autenticação biométrica rápida (menos de 2 segundos), notificações em tempo real, além de dashboards
-                  para gestão e auditoria dos acessos. Tudo isso com respeito total à LGPD, assegurando criptografia 
-                  dos dados e controle rigoroso de permissões.
-                  Utilizei metodologia ágil Scrum para conduzir o desenvolvimento,
-                  implementando infraestrutura como código com Terraform, conteinerização com
-                  Docker e pipelines CI/CD para entrega contínua e segura. Todo cenario foi pensado exclusivamente para agilizar
-                  toda a multidão na chegada dos estadios, assim causando tumulto, longas espera de tempo para entrada da torcida.
-                </div>
-                <div class="imagem">
-                  <img src="assets/img/portfolio/projeto.png" alt="imagem do projeto" />
-                </div>
-              </li>
-            </ul>
         </section>
-        <h3 class="resume-title">Desenvolvimento com Java - Rocketseat | Fev/2025 - Jun/2025</h3>
-            <ul>
-              <li>Desenvolvimento de aplicação serverless com Java e Maven para
-                  redirecionamento de urls. Realizado a integração com AWS S3 para criação e
-                  gerenciamento de buckets, exposição de endpoints via API Gateway, uso de
-                  AWS Lambda para processamento serverless, e manipulação de dados em JSON
-                  com Jackson e desenvolvimento de aplicação back-end Java com Maven
-                  utilizando SpringBoot e API Rest. Estruturação do projeto desde a modelagem
-                  dos dados até a implementação das funcionalidades principais. Integração com o
-                  banco de dados MySQL utilizando JPA e JDBC. Utilização de records para
-                  manipulação dos dados. Implementação de um sistema de indicações com
-                  ranking dos usuários que mais convidaram pessoas para o evento.</li>
-            </ul><br>
 
-        <h3 class="resume-title">NLW Pocket: Mobile - Kotlin - Curso Rocketseat | Dez/2024 - Dez/2024</h3>
-            <ul>
-              <li>Desenvolvimento de uma aplicação mobile Android nativo com Kotlin, Android
-                  Studio, MVI + Clean, Architecture,Jetpack Compose, ViewModel e Lifecycle,
-                  Navigation, Google Maps API, Flow e Coroutines, Ktor, Kotlinx, Serialization,
-                  Coil, Gradle</li>
-            </ul><br>
-        <h3 class="resume-title">NLW Pocket: Javascript - Curso Rocketseat | Nov/2024 - Nov/2024</h3>
-            <ul>
-              <li>Desenvolvimento de uma aplicação back-end em Node.js, aplicação dos
-                  conceitos de API REST, utilizando TypeScript, Fastify como framework,
-                  integração do DrizzleORM + PostgreSQL, Docker e Zod para validação de
-                  dados. Desenvolvimento de uma aplicação front-end em ReactJS,
-                  aplicação dos conceitos de Propriedades, Estados e Componentes,tipagem
-                  com Typescript,tooling com Vite, interface responsiva com TailwindCSS,
-                  consumo de API Node.js, gerenciamento de dados assíncronos com
-                  TanStack Query.</li>
-            </ul><br>
-        <h3 class="resume-title">Desenvolvimento PHP – Curso Rocketseat | Out/2024 – Out/2024</h3>
-            <ul>
-              <li>Desenvolvimento de uma aplicação em PHP com Laravel seguindo a
-                  arquitetura MVC, conceitos e criação de controllers, models e views para
-                  estruturar a nossa aplicação, SQLite, uso de migrations, criação de dados
-                  falsos com as factories e seeders pra popular o banco, validações e criação
-                  de interfaces dinâmicas e reativas com o Livewire.</li>
-            </ul><br>
-        <h3 class="resume-title">IA na prática - Rocketseat | Agost/2024 – Agost/2024</h3>
-            <ul>
-              <li>Desenvolvimento de aplicação Python, integração com modelo GPT da OpenAI, uso do framework
-                  CrewAI, criação de agente para consumo de dados do duckduckgo, criação de frontend com framework StreamLit,
-                  deploy via StreamLit cloud.</li>
-            </ul><br>
-        <h3 class="resume-title">NLW Journey - Java da Rocketseat | Jul/2024 – Jul/2024</h3>
-            <ul>
-              <li>Desenvolvimento de uma aplicação back-end em Java com Spring boot utilizando ferramentas modernas
-                  para garantir eficiência e escalabilidade. Neste projeto foi utilizado h2 database,JPA, migrations via Flyway, uso de
-                  records para transferências de dados, Lombok.</li>
-            </ul><br>
+        <hr>
+        
         <section id="Informacoes" class="services section"></section>
          <div class="container section-title" data-aos="fade-up">
           <h2>Participações</h2>
