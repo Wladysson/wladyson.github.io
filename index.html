@@ -222,9 +222,16 @@
               </li>
             </ul>
 
+              <div class="github-stats">
+                  <a href="https://github.com/Wladysson" target="_blank" rel="noopener noreferrer">
+                      <img
+                          src="https://github-readme-stats-sigma-five.vercel.app/api?username=Wladysson&show_icons=true&theme=blue_navy&hide_border=true&include_all_commits=true&count_private=true"
+                          alt="GitHub Statistics">
+                  </a>
+              </div>
+
       </div><!-- End Section Title -->
         <hr>
-
 
     </section><!-- /Stats Section -->
     <!-- Resume Section -->
@@ -572,7 +579,7 @@
         { img: "branding-5.png", filter: "filter-branding", gallery: "branding" },//OK
         { img: "branding-7.png", filter: "filter-branding", gallery: "branding" },//OK
         { img: "books-11.png", filter: "filter-books", gallery: "book" },//OK
-        { img: "branding-8.jpg", filter: "filter-branding", gallery: "branding" },//OK
+        { img: "branding-8.png", filter: "filter-branding", gallery: "branding" },//OK
         { img: "branding-13.png", filter: "filter-branding", gallery: "branding" },//OK
         { img: "books-2.jpg", filter: "filter-books", gallery: "book" },//OK"
         { img: "branding-14.png", filter: "filter-branding", gallery: "branding" },//OK
@@ -590,28 +597,23 @@
         { img: "app-20.gif", filter: "filter-app", gallery: "app" },//OK
         { img: "branding-35.png", filter: "filter-branding", gallery: "branding" },//OK
         { img: "books-6.gif", filter: "filter-books", gallery: "book" },//OK
-        { img: "branding-31.png", filter: "filter-branding", gallery: "branding" },//OK
         { img: "app-14.jpg", filter: "filter-app", gallery: "app" },//OK
-        { img: "branding-29.png", filter: "filter-branding", gallery: "branding" },//OK
         { img: "app-8.png", filter: "filter-app", gallery: "app" },//OK
         { img: "branding-36.png", filter: "filter-branding", gallery: "branding" },//OK
         { img: "books-5.gif", filter: "filter-books", gallery: "book" },//OK
-        { img: "branding-28.png", filter: "filter-branding", galerry: "branding" },//OK
         { img: "books-13.png", filter: "filter-books", gallery: "book" },//OK
         { img: "app-10.jpg", filter: "filter-app", gallery: "app" },//OK
         { img: "branding-10.png", filter: "filter-branding", gallery: "branding" },//OK
         { img: "app-9.png", filter: "filter-app", gallery: "app" },//OK
-        { img: "branding-32.png", filter: "filter-branding", gallery: "branding" },//OK
         { img: "branding-26.png", filter: "filter-branding", gallery: "branding" },//OK
         { img: "books-7.png", filter: "filter-books", gallery: "book" },//OK
         { img: "branding-21.png", filter: "filter-branding", gallery: "branding" },//OK
         { img: "branding-22.png", filter: "filter-branding", gallery: "branding" },//OK
-        { img: "books-4.jpg", filter: "filter-books", gallery: "book" },//OK
+        { img: "books-4.png", filter: "filter-books", gallery: "book" },//OK
         { img: "branding-38.png", filter: "filter-branding", gallery: "branding" },//OK
         { img: "app-15.jpg", filter: "filter-app", gallery: "app" },//OK
-        { img: "branding-3.jpg", filter: "filter-branding", gallery: "branding" },//OK
+        { img: "branding-3.png", filter: "filter-branding", gallery: "branding" },//OK
         { img: "books-8.png", filter: "filter-books", gallery: "book" },//OK
-        { img: "branding-27.png", filter: "filter-branding", gallery: "branding" },//OK
         { img: "branding-11.png", filter: "filter-branding", gallery: "branding" },//OK
         { img: "branding-24.png", filter: "filter-branding", gallery: "branding" },//OK
         { img: "app-11.jpg", filter: "filter-app", gallery: "app" },//OK
@@ -993,12 +995,35 @@
                   The final phase includes the immutable audit system, performance optimizations, and resilience testing with controlled
                   failures in Kubernetes, along with the completion of the SLO and SLI dashboards for monitoring the behavior of the microservices.
                   The accounting closing processes perform nightly calculations and aggregations, while the audit trail permanently saves all events to comply with regulatory requirements.
+
+                  <div class="project-links">
+                    <a href="https://github.com/Wladysson/Bank" target="_blank">
+                      <i class="bx bxl-github"></i>
+                      Repository
+                    </a>
+
+                    <a href="LINK_DA_DOCUMENTACAO" target="_blank">
+                      <i class="bx bx-book-open"></i>
+                      Documentation
+                    </a>
+
+                    <a href="LINK_DA_ARQUITETURA" target="_blank">
+                      <i class="bx bx-sitemap"></i>
+                      Architecture
+                    </a>
+
+                    <a href="LINK_DAS_RELEASES" target="_blank">
+                      <i class="bx bx-package"></i>
+                      Releases
+                    </a>
+                  </div>
                 </div>
                 <div class="imagem">
                   <img src="assets/img/bank.jpg" alt="imagem do projeto" />
                 </div>
               </li>
-            </ul> 
+            </ul>
+            <br>
 
           <h3 class="resume-title">Asynchronous Payment Gateway System</h3>
             <ul>
@@ -1006,21 +1031,44 @@
                 <div class="texto"> This project is designed for high-concurrency, low-latency scenarios, 
                   inspired by systems like PIX. The platform receives payment requests and executes processing in a 
                   completely asynchronous manner, ensuring logical atomicity and eventual consistency between accounts.
-                   The architecture is event-driven and composed of two main microservices: a Gateway Handler, responsible 
-                   for ingesting, validating, and publishing payment events, and a Transaction Processor, responsible for
-                    executing debits and credits. Coordination between services is performed using the SAGA pattern via choreography,
-                     allowing for automatic compensation in case of partial failures. Communication between components occurs via Apache Kafka,
-                      ensuring reliable delivery, ordering, and fault tolerance during processing. The system runs on Kubernetes, guaranteeing 
-                      orchestration, scalability, and high availability. The Gateway Handler was developed in Java with Reactive Quarkus, using
-                       Mutiny for non-blocking programming, allowing thousands of simultaneous connections with low latency. Critical performance
-                        metrics, including P99 latency, are continuously monitored using Prometheus. The persistence layer uses PostgreSQL as the
-                         transactional database, provisioned via Terraform, with explicit configuration of isolation levels and lock control to preserve transactional integrity in concurrent scenarios.
+                  The architecture is event-driven and composed of two main microservices: a Gateway Handler, responsible 
+                  for ingesting, validating, and publishing payment events, and a Transaction Processor, responsible for
+                  executing debits and credits. Coordination between services is performed using the SAGA pattern via choreography,
+                  allowing for automatic compensation in case of partial failures. Communication between components occurs via Apache Kafka,
+                  ensuring reliable delivery, ordering, and fault tolerance during processing. The system runs on Kubernetes, guaranteeing 
+                  orchestration, scalability, and high availability. The Gateway Handler was developed in Java with Reactive Quarkus, using
+                  Mutiny for non-blocking programming, allowing thousands of simultaneous connections with low latency. Critical performance
+                  metrics, including P99 latency, are continuously monitored using Prometheus. The persistence layer uses PostgreSQL as the
+                  transactional database, provisioned via Terraform, with explicit configuration of isolation levels and lock control to preserve transactional integrity in concurrent scenarios.
+
+                  <div class="project-links">
+                    <a href="https://github.com/Wladysson/SpeedPag" target="_blank">
+                      <i class="bx bxl-github"></i>
+                      Repository
+                    </a>
+
+                    <a href="LINK_DA_DOCUMENTACAO" target="_blank">
+                      <i class="bx bx-book-open"></i>
+                      Documentation
+                    </a>
+
+                    <a href="LINK_DA_ARQUITETURA" target="_blank">
+                      <i class="bx bx-sitemap"></i>
+                      Architecture
+                    </a>
+
+                    <a href="LINK_DAS_RELEASES" target="_blank">
+                      <i class="bx bx-package"></i>
+                      Releases
+                    </a>
+                  </div>
                 </div>
                 <div class="imagem">
                   <img src="assets/img/portfolio/pix.jpg" alt="imagem do projeto" />
                 </div>
               </li>
             </ul>
+            <br>
 
           <h3 class="resume-title">Account Reconciliation Engine (Batches and Streams)</h3>
             <ul>
@@ -1029,14 +1077,37 @@
                   The system performs batch reconciliation through complex jobs implemented in Java with Spring Batch, optimized for reading, processing, and writing large files, including bank statements up to 10 GB. The recurring execution of these processes is orchestrated via Kubernetes CronJobs, ensuring predictability and load isolation.
                   For continuous reconciliations, the engine uses Kafka Streams to process financial events in real time, allowing for immediate reconciliation of transactions, reversals, and corrections as events are published, eliminating the exclusive dependency on daily batch processing.
                   Raw files are stored in AWS S3, ensuring durability and traceability, while consolidated reconciliation results are persisted in AWS Redshift, enabling historical analysis and large-scale analytical queries. The entire infrastructure was provisioned as code with Terraform, ensuring reproducible and consistent environments. The system's observability was structured with Datadog, monitoring worker health, processing throughput, and Kafka queue lag, allowing for proactive detection of bottlenecks and operational failures.
+                  
+                  <div class="project-links">
+                    <a href="https://github.com/Wladysson/Bead-Machine" target="_blank">
+                      <i class="bx bxl-github"></i>
+                      Repository
+                    </a>
+
+                    <a href="LINK_DA_DOCUMENTACAO" target="_blank">
+                      <i class="bx bx-book-open"></i>
+                      Documentation
+                    </a>
+
+                    <a href="LINK_DA_ARQUITETURA" target="_blank">
+                      <i class="bx bx-sitemap"></i>
+                      Architecture
+                    </a>
+
+                    <a href="LINK_DAS_RELEASES" target="_blank">
+                      <i class="bx bx-package"></i>
+                      Releases
+                    </a>
+                  </div>
                 </div>
+                
                 <div class="imagem">
                   <img src="assets/img/portfolio/conc.png" alt="imagem do projeto" />
                 </div>
               </li>
             </ul>
 
-          <h3 class="resume-title">Suprema Admin - Healthcare Administrative Automation System</h3>
+          <h3 class="resume-title">Suprema Admin - Administrative Automation System for Clinics and Hospitals</h3>
             <ul>
               <li class="texto-imagem">
                 <div class="texto"> This data automation and processing system is designed for the administrative management of clinics and healthcare institutions. It handles large volumes of unstructured information and integrates
@@ -1048,30 +1119,36 @@
                   by different regulatory bodies, extracting relevant information and submitting it according to specific deadlines and formats, eliminating manual processes and email submissions. This workflow ensured 
                   standardization, traceability, and continuous regulatory compliance. As an operational result, the system automatically processed 12,526 data entry procedures in just 5 days, a volume that previously
                   required between 45 and 50 working days of manual work by a team of approximately 6 people. Automation drastically reduced processing time and freed up the administrative team for strategic activities.
+
+                  <div class="project-links">
+                    <a href="LINK_DO_REPOSITORIO" target="_blank">
+                      <i class="bx bxl-github"></i>
+                      Repository
+                    </a>
+
+                    <a href="LINK_DA_DOCUMENTACAO" target="_blank">
+                      <i class="bx bx-book-open"></i>
+                      Documentation
+                    </a>
+
+                    <a href="LINK_DA_ARQUITETURA" target="_blank">
+                      <i class="bx bx-sitemap"></i>
+                      Architecture
+                    </a>
+
+                    <a href="LINK_DAS_RELEASES" target="_blank">
+                      <i class="bx bx-package"></i>
+                      Releases
+                    </a>
+                  </div>
                 </div>
                 <div class="imagem">
                   <img src="assets/img/portfolio/suprema.png" alt="imagem do projeto" />
                 </div>
               </li>
             </ul>
+            <br>
 
-          <h3 class="resume-title">Limits and Fraud Monitoring API</h3>
-            <ul>
-              <li class="texto-imagem">
-                <div class="texto"> This project focuses on real-time validation and decision-making to prevent fraud and limit overruns during transactions.
-                  The goal was to create a high-throughput Java API that, with each received transaction, queries the customer's history and applies complex 
-                  business rules—such as daily limits and usage frequency—in milliseconds. To ensure fast decisions, Redis (via Caffeine as a local cache +
-                  remote Redis) was used to store limits and recent customer data in memory, maintaining response times below 50ms. The Redis cluster was
-                  provisioned with Terraform using AWS ElastiCache. Business rules were implemented with Drools, allowing fraud rules to be updated without
-                  recompiling the core code. The CI/CD pipeline in GitHub Actions validates and deploys new rules in a Blue/Green environment on Kubernetes,
-                  ensuring secure updates. Monitoring was performed using Prometheus and Grafana, creating dashboards that track "Rejected due to Limit"
-                  and "Rejected due to Fraud" rates, aligned with business metrics defined according to SRE practices.
-                </div>
-                <div class="imagem">
-                  <img src="assets/img/portfolio/api.jpg" alt="imagem do projeto" />
-                </div>
-              </li>
-            </ul>
 
           <h3 class="resume-title">Real-Time Credit Limit Management System</h3>
             <ul>
@@ -1082,79 +1159,40 @@
                   in case the cache becomes unavailable. For integrity, I implemented the Two-Phase Commit pattern to maintain strict consistency between the limit service
                   and the debit/credit service, meeting regulatory requirements for data integrity. For performance testing, I ran large-scale load tests with Gatling,
                   integrated into the CI/CD pipeline in GitHub Actions, ensuring that performance issues are detected before production deployment.
+
+                  <div class="project-links">
+                    <a href="https://github.com/Wladysson/DataCredit" target="_blank">
+                      <i class="bx bxl-github"></i>
+                      Repository
+                    </a>
+
+                    <a href="LINK_DA_DOCUMENTACAO" target="_blank">
+                      <i class="bx bx-book-open"></i>
+                      Documentation
+                    </a>
+
+                    <a href="LINK_DA_ARQUITETURA" target="_blank">
+                      <i class="bx bx-sitemap"></i>
+                      Architecture
+                    </a>
+
+                    <a href="LINK_DAS_RELEASES" target="_blank">
+                      <i class="bx bx-package"></i>
+                      Releases
+                    </a>
+                  </div>
                 </div>
                 <div class="imagem">
                   <img src="assets/img/portfolio/Screenshot from 2026-01-02 14-24-24.jpg" alt="imagem do projeto" />
                 </div>
               </li>
             </ul>
+            <br>
           
-          <h3 class="resume-title">Digital ticketing and sales system</h3>
-            <ul>
-              <li class="texto-imagem">
-                <div class="texto"> This project, a facial recognition identity validation system for Santa Cruz 
-                  Futebol Clube, complies with the General Sports Law (14.597/2023) and promotes greater security,
-                  speed, and comfort for fans. The project integrates advanced AWS technologies such as Amazon
-                  Rekognition for facial recognition, DynamoDB for secure data storage, API Gateway, and AWS Lambda
-                  for serverless processing, ensuring high scalability and availability exceeding 99% on game
-                  days. Focusing on fraud reduction, elimination of ticket scalping, and faster access, the system
-                  offers rapid biometric authentication (less than 2 seconds), real-time notifications, and 
-                  dashboards for access management and auditing. All this is done in full compliance with the LGPD
-                  (Brazilian General Data Protection Law), ensuring data encryption and rigorous permission control.
-                  I used the Scrum agile methodology to lead the development, implementing infrastructure as code
-                  with Terraform, containerization with Docker, and CI/CD pipelines for continuous and secure delivery. 
-                  The entire scenario was designed exclusively to expedite the arrival of large crowds at stadiums, thus
-                  preventing congestion and long waiting times for fans to enter.
-                </div>
-                <div class="imagem">
-                  <img src="assets/img/portfolio/projeto.png" alt="imagem do projeto" />
-                </div>
-              </li>
-            </ul>
         </section>
-        <h3 class="resume-title">Java Development - Rocketseat | Feb/2025 - Jun/2025</h3>
-            <ul>
-              <li>Development of a serverless application with Java and Maven for URL redirection.
-                Integration with AWS S3 was carried out for the creation and management of buckets,
-                exposure of endpoints via API Gateway, use of AWS Lambda for serverless processing,
-                and manipulation of JSON data with Jackson and development of a Java back-end application
-                with Maven using Spring Boot and REST API. Project structuring from data modeling to the
-                implementation of the main functionalities. Integration with the MySQL database using JPA 
-                and JDBC. Use of records for data manipulation. Implementation of a referral system with
-                a ranking of users who invited the most people to the event.</li>
-            </ul><br>
-        <h3 class="resume-title">NLW Pocket: Mobile - Kotlin - Rocketseat | Dec/2024 - Dec/2024</h3>
-            <ul>
-              <li>Development of a native Android mobile application with Kotlin, Android Studio, MVI + Clean, Architecture, Jetpack Compose, ViewModel and Lifecycle,
-              Navigation, Google Maps API, Flow and Coroutines, Ktor, Kotlinx, Serialization,
-              Coil, Gradle</li>
-            </ul><br>
-        <h3 class="resume-title">NLW Pocket: Javascript - Rocketseat | Nov/2024 - Nov/2024</h3>
-            <ul>
-              <li>Development of a back-end application in Node.js,
-                 application of REST API concepts, using TypeScript,
-                  Fastify as a framework, integration of DrizzleORM +
-                   PostgreSQL, Docker and Zod for data validation. Development
-                    of a front-end application in ReactJS, application of the
-                     concepts of Properties, States and Components, typing with
-                      TypeScript, tooling with Vite, responsive interface with 
-                      TailwindCSS, consumption of Node.js API, asynchronous data
-                       management with TanStack Query.</li>
-            </ul><br>
-        <h3 class="resume-title">PHP Development – ​​Rocketseat | Oct/2024 – Oct/2024</h3>
-            <ul>
-              <li>Development of a PHP application with Laravel following the MVC architecture, concepts and 
-                creation of controllers, models and views to structure our application, SQLite, use of migrations,
-                 creation of dummy data with factories and seeders to populate the database, validations and creation of dynamic and reactive interfaces with Livewire.</li>
-            </ul><br>
-        <h3 class="resume-title">IA na prática - Rocketseat | Agost/2024 – Agost/2024</h3>
-            <ul>
-              <li>Development of a Python application, integration with the OpenAI GPT model, use of the CrewAI framework, creation of an agent for consuming DuckDuckGo data, creation of a frontend with the StreamLit framework, deployment via StreamLit cloud.</li>
-            </ul><br>
-        <h3 class="resume-title">NLW Journey - Java by Rocketseat | Jul/2024 – Jul/2024</h3>
-            <ul>
-              <li>Development of a Java back-end application with Spring Boot using modern tools to ensure efficiency and scalability. This project utilized h2 database, JPA, migrations via Flyway, use of records for data transfers, and Lombok.</li>
-            </ul><br>
+
+        <hr>
+
         <section id="Informacoes" class="services section"></section>
          <div class="container section-title" data-aos="fade-up">
           <h2>Participations</h2>
@@ -1215,7 +1253,6 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
 

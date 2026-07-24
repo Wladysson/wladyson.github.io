@@ -216,6 +216,44 @@ h6 {
   }
 }
 
+.github-stats {
+    margin-top: -210px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.github-stats img {
+    width: 550px;
+    max-width: 100%;
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 18px;
+}
+
+.project-links a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #149ddd;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color .3s ease;
+}
+
+.project-links a i {
+    font-size: 18px;
+}
+
+.project-links a:hover {
+    color: #37b3ed;
+}
+
+
 @media (max-width: 1199px) {
   .header {
     left: -100%;
